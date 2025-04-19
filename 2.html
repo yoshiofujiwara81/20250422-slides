@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">    <title>アジェンダ - Jiteraの組織とAIエージェントの活用</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slide-content {
+            padding: 60px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+        .title-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+        }
+        .corner-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(99, 179, 237, 0.2) 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            z-index: 0;
+        }
+        .agenda-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+        .agenda-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #3182ce;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 24px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .agenda-content {
+            flex-grow: 1;
+        }
+        .agenda-sub-item {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            margin-left: 20px;
+        }
+        .agenda-sub-icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #a3bffa;
+            color: #2c5282;
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="title-shape"></div>
+        
+        <div class="slide-content">
+            <h1 class="text-4xl font-bold text-gray-800 mb-12 border-b-2 border-blue-500 pb-4">アジェンダ</h1>
+            
+            <div class="agenda-item">
+                <div class="agenda-number">1</div>
+                <div class="agenda-content">
+                    <h2 class="text-2xl font-semibold text-gray-800">Jiteraの組織について</h2>
+                    <div class="agenda-sub-item">
+                        <div class="agenda-sub-icon"><i class="fas fa-user-tie"></i></div>
+                        <span class="text-lg text-gray-700">自己紹介・会社紹介</span>
+                    </div>
+                    <div class="agenda-sub-item">
+                        <div class="agenda-sub-icon"><i class="fas fa-users"></i></div>
+                        <span class="text-lg text-gray-700">Jiteraのエンジニア組織</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="agenda-item">
+                <div class="agenda-number">2</div>
+                <div class="agenda-content">
+                    <h2 class="text-2xl font-semibold text-gray-800">開発現場のAIエージェントの活用</h2>
+                    <div class="agenda-sub-item">
+                        <div class="agenda-sub-icon"><i class="fas fa-robot"></i></div>
+                        <span class="text-lg text-gray-700">JiteraでのJitera活用について</span>
+                    </div>
+                    <div class="agenda-sub-item">
+                        <div class="agenda-sub-icon"><i class="fas fa-code"></i></div>
+                        <span class="text-lg text-gray-700">JiteraでのDevin活用について</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="agenda-item">
+                <div class="agenda-number">3</div>
+                <div class="agenda-content">
+                    <h2 class="text-2xl font-semibold text-gray-800">開発現場にAIエージェントをどう導入するか</h2>
+                    <div class="agenda-sub-item">
+                        <div class="agenda-sub-icon"><i class="fas fa-database"></i></div>
+                        <span class="text-lg text-gray-700">AIエージェントの学習と開発現場のデータ活用</span>
+                    </div>
+                    <div class="agenda-sub-item">
+                        <div class="agenda-sub-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <span class="text-lg text-gray-700">技術的課題と解決策</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-auto flex justify-between items-center">
+                <div class="text-gray-500">CONFIDENTIAL</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

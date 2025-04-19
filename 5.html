@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">    <title>プロダクト紹介 - Jiteraの組織とAIエージェントの活用</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slide-content {
+            padding: 50px 60px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+        .title-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+            margin: 15px 0;
+            width: 100px;
+            border-radius: 2px;
+        }
+        .product-section {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+        }
+        .product-header {
+            padding: 30px;
+            background-color: #111a3b;
+            display: flex;
+            align-items: center;
+        }
+        .product-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3182ce 0%, #63b3ed 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+        .product-content {
+            display: flex;
+            flex: 1;
+        }
+        .product-text {
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .product-features {
+            flex: 1.5;
+            background-color: #0f1b42;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .feature-box {
+            background-color: #1e3a8a;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="title-shape"></div>
+        
+        <div class="slide-content">
+            <h1 class="text-4xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-4">
+                プロダクト紹介
+            </h1>
+            
+            <div class="product-section">
+                <div class="flex h-full items-center">
+                    <!-- 左側のコンテンツ -->
+                    <div class="w-2/5 p-10 flex flex-col justify-center">
+                        <h2 class="text-4xl font-bold mb-6 text-gray-800">Jiteraとは？</h2>
+                        <p class="text-xl mb-4 text-gray-700">Jiteraは、システム設計書の<br>作成を自動化し、開発者に</p>
+                        <div class="mb-4">
+                            <p class="text-5xl font-bold mb-2" style="background: linear-gradient(90deg, #3B82F6, #8B5CF6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">高度な</p>
+                            <p class="text-5xl font-bold" style="background: linear-gradient(90deg, #3B82F6, #8B5CF6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">AIアシスタント</p>
+                        </div>
+                        <p class="text-xl text-gray-700">を提供するツールです。</p>
+                    </div>
+
+                    <!-- 右側のコンテンツ（画像として表示） -->
+                    <div class="w-3/5 flex items-center justify-center">
+                        <img src="images/jitera-features.png" alt="Jitera機能一覧" class="w-4/5 h-auto p-4">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-auto flex justify-between items-center">
+                <div class="text-gray-500">CONFIDENTIAL</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

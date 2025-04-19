@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">    <title>Jiteraのエンジニア組織 - Jiteraの組織とAIエージェントの活用</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slide-content {
+            padding: 60px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+        .title-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+        }
+        .corner-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(99, 179, 237, 0.2) 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            z-index: 0;
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        .content-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+            margin: 10px 0;
+            width: 100px;
+            border-radius: 2px;
+        }
+        .country-flag {
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="title-shape"></div>
+        
+        <div class="slide-content">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 border-b-2 border-blue-500 pb-4">
+                Jiteraのエンジニア組織
+            </h1>
+            
+            <div class="grid grid-cols-2 gap-8">
+                <div class="content-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">グローバルエンジニア組織</h3>
+                    </div>
+                    <div class="divider"></div>
+                    
+                    <ul class="mt-4 space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700">Jiteraのエンジニアはほぼ外国人</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700">外国人に限定しているわけではない</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-comments text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700">プロダクトチームのコミュニケーションは英語</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-handshake text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700">定期的なオンライン1on1を実施</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-project-diagram text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">プロダクトチームの組織構成</h3>
+                    </div>
+                    <div class="divider"></div>
+                    
+                    <div class="mt-4">
+                        <div class="mb-4">
+                            <div class="text-lg font-semibold text-gray-700 mb-2">エンジニアマネージャー</div>
+                            <div class="flex items-center bg-blue-50 rounded-lg p-2">
+                                <span class="country-flag bg-red-100">🇵🇱</span>
+                                <span class="text-gray-700">ポーランド</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="text-lg font-semibold text-gray-700 mb-2">エンジニア</div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇫🇷</span>フランス</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇵🇹</span>ポルトガル</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇸🇪</span>スウェーデン</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇵🇱</span>ポーランド</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇬🇧</span>イギリス</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇮🇳</span>インド</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇻🇳</span>ベトナム</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇮🇩</span>インドネシア</span>
+                                <span class="inline-flex items-center bg-blue-50 rounded-lg p-2"><span class="country-flag bg-red-100">🇵🇭</span>フィリピン</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="text-lg font-semibold text-gray-700 mb-2">プロダクトマネージャー・オーナー</div>
+                            <div class="flex items-center bg-blue-50 rounded-lg p-2">
+                                <span class="country-flag bg-red-100">🇯🇵</span>
+                                <span class="text-gray-700">日本</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-card mt-6">
+                <div class="flex items-center mb-3">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-comment-dots text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">オープンでアジャイルなコミュニケーション</h3>
+                </div>
+                <div class="divider"></div>
+                
+                <div class="grid grid-cols-3 gap-4 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-sync-alt text-blue-500 mt-1 mr-2"></i>
+                        <span class="text-gray-700">問題が起こっても都度最善の道を模索するアジャイル的なコミュニケーション</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fab fa-slack text-blue-500 mt-1 mr-2"></i>
+                        <span class="text-gray-700">SlackチャンネルやNotionでのコミュニケーション</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-video text-blue-500 mt-1 mr-2"></i>
+                        <span class="text-gray-700">Google Meetなどを用いた即時的なコミュニケーション</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-auto flex justify-between items-center">
+                <div class="text-gray-500">CONFIDENTIAL</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

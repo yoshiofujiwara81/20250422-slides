@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">    <title>会社情報 - Jiteraの組織とAIエージェントの活用</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slide-content {
+            padding: 50px 60px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+        .title-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+        }
+        .corner-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(99, 179, 237, 0.2) 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            z-index: 0;
+        }
+        .company-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        .company-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+            margin: 10px 0;
+            width: 100px;
+            border-radius: 2px;
+        }
+        .company-info-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 10px;
+            align-items: baseline;
+        }
+        .company-info-label {
+            font-weight: 500;
+            color: #4a5568;
+            padding-right: 15px;
+        }
+        .company-info-value {
+            color: #2d3748;
+        }
+        .country-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ebf8ff;
+            color: #3182ce;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+        .country-icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="title-shape"></div>
+        
+        <div class="slide-content">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 border-b-2 border-blue-500 pb-4">
+                会社情報
+            </h1>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <div class="company-card">
+                    <div class="country-badge">
+                        <i class="fas fa-map-marker-alt country-icon"></i>
+                        日本
+                    </div>
+                    
+                    <div class="company-info-grid">
+                        <div class="company-info-label">会社名</div>
+                        <div class="company-info-value font-medium">株式会社Jitera（英文名: Jitera Inc.）</div>
+                        
+                        <div class="company-info-label">所在地</div>
+                        <div class="company-info-value">〒105-0003<br>東京都港区西新橋1丁目2-9 日比谷セントラルビル 14階</div>
+                        
+                        <div class="company-info-label">設立</div>
+                        <div class="company-info-value">2017年8月21日</div>
+                        
+                        <div class="company-info-label">役員</div>
+                        <div class="company-info-value">
+                            <div class="flex items-center mb-1">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs mr-2">CEO</span>
+                                柳澤 直
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs mr-2">COO</span>
+                                沼田 洋太
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs mr-2">CPO</span>
+                                甲斐 啓真
+                            </div>
+                        </div>
+                        
+                        <div class="company-info-label">従業員数</div>
+                        <div class="company-info-value">120名（グループ全体）<br><span class="text-sm text-gray-500">2025年4月現在</span></div>
+                    </div>
+                </div>
+                
+                <div class="company-card">
+                    <div class="country-badge">
+                        <i class="fas fa-map-marker-alt country-icon"></i>
+                        シンガポール
+                    </div>
+                    
+                    <div class="company-info-grid">
+                        <div class="company-info-label">会社名</div>
+                        <div class="company-info-value font-medium">Jitera PTE. LTD.</div>
+                        
+                        <div class="company-info-label">所在地</div>
+                        <div class="company-info-value">18 ROBINSON ROAD, #20-02, 18 ROBINSON,<br>SINGAPORE (048547)</div>
+                        
+                        <div class="company-info-label">備考</div>
+                        <div class="company-info-value text-sm italic">* Normal operations are performed fully remotely</div>
+                        
+                        <div class="company-info-label">設立</div>
+                        <div class="company-info-value">June 5, 2022</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 grid grid-cols-1 gap-6">
+                <div class="company-card">
+                    <div class="country-badge">
+                        <i class="fas fa-map-marker-alt country-icon"></i>
+                        United States
+                    </div>
+                    
+                    <div class="company-info-grid">
+                        <div class="company-info-label">会社名</div>
+                        <div class="company-info-value font-medium">Jitera Inc.</div>
+                        
+                        <div class="company-info-label">所在地</div>
+                        <div class="company-info-value">214 Homer Ave, Palo Alto, CA, United States, US, 94301</div>
+                        
+                        <div class="company-info-label">設立</div>
+                        <div class="company-info-value">18 Feb 2025</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                <div class="flex items-center">
+                    <i class="fas fa-info-circle text-blue-500 text-xl mr-3"></i>
+                    <p class="text-gray-700">
+                        グローバルな事業展開と、日本・アジア地域でのビジネス拡大に向けて、複数拠点で事業を展開しています。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-auto flex justify-between items-center">
+                <div class="text-gray-500">CONFIDENTIAL</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
