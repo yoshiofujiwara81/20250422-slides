@@ -146,7 +146,7 @@
             </button>
             
             <div class="slide-indicator">
-                <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
+                <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
             </div>
             
             <button id="nextBtn" class="control-button">
@@ -165,11 +165,28 @@
             const fullscreenBtn = document.getElementById('fullscreenBtn');
             
             // スライドの総数
-            const totalSlides = 10;
+            const totalSlides = 13;
             totalSlidesEl.textContent = totalSlides;
             
             // 現在のスライド番号
             let currentSlide = 1;
+            
+            // スライドの順序マッピング
+            const slideOrder = {
+                1: "1.html",
+                2: "2.html",
+                3: "3.html",
+                4: "4.html",
+                5: "5.html",
+                6: "11.html",
+                7: "12.html",
+                8: "13.html",
+                9: "6.html",
+                10: "7.html",
+                11: "8.html",
+                12: "9.html",
+                13: "10.html"
+            };
             
             // 前のスライドに移動
             function goToPrevSlide() {
@@ -189,7 +206,7 @@
             
             // スライドの更新
             function updateSlide() {
-                slideFrame.src = `${currentSlide}.html`;
+                slideFrame.src = slideOrder[currentSlide];
                 currentSlideEl.textContent = currentSlide;
                 
                 // ボタンの有効/無効状態を更新
